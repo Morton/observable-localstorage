@@ -27,7 +27,7 @@ export default class ObservableLocalStorage
     };
     this.observers = [];
 
-    window.addEventListener('storage', this.notifyObservers);
+    window.addEventListener('storage', this.notifyObservers.bind(this));
   }
 
   public clear(): void {
