@@ -70,6 +70,8 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/dummystorage.html" class="tsd-kind-icon">Dummy<wbr>Storage</a></li>
+								<li class="tsd-kind-class"><a href="classes/observabledummystorage.html" class="tsd-kind-icon">Observable<wbr>Dummy<wbr>Storage</a></li>
 								<li class="tsd-kind-class"><a href="classes/observablelocalstorage.html" class="tsd-kind-icon">Observable<wbr>Local<wbr>Storage</a></li>
 							</ul>
 						</section>
@@ -91,6 +93,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#haswindow" class="tsd-kind-icon">has<wbr>Window</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#observablelocalstorage" class="tsd-kind-icon">observable<wbr>Local<wbr>Storage</a></li>
 							</ul>
 						</section>
@@ -105,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">Observer<wbr>Callback&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/33f740b/src/lib/rxInterfaces.ts#L13">lib/rxInterfaces.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/a6c751a/src/lib/rxInterfaces.ts#L13">lib/rxInterfaces.ts:13</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -142,20 +145,30 @@
 					<div class="tsd-signature tsd-kind-icon">Partial<wbr>Storage<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">StorageEvent</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"key"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"newValue"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"oldValue"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"storageArea"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/33f740b/src/lib/ObservableStorage.ts#L8">lib/ObservableStorage.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/a6c751a/src/lib/ObservableStorage.ts#L8">lib/ObservableStorage.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+					<a name="haswindow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> has<wbr>Window</h3>
+					<div class="tsd-signature tsd-kind-icon">has<wbr>Window<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;!!(typeof window !&#x3D;&#x3D; &#x27;undefined&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/a6c751a/src/index.ts#L4">index.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="observablelocalstorage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> observable<wbr>Local<wbr>Storage</h3>
-					<div class="tsd-signature tsd-kind-icon">observable<wbr>Local<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservableLocalStorage</span><span class="tsd-signature-symbol"> =&nbsp;new ObservableLocalStorage()</span></div>
+					<div class="tsd-signature tsd-kind-icon">observable<wbr>Local<wbr>Storage<span class="tsd-signature-symbol">:</span> <a href="classes/observabledummystorage.html" class="tsd-signature-type">ObservableDummyStorage</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ObservableLocalStorage</span><span class="tsd-signature-symbol"> =&nbsp;hasWindow? new ObservableLocalStorage(): new ObservableDummyStorage()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/33f740b/src/index.ts#L3">index.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/Morton/observable-localstorage/blob/a6c751a/src/index.ts#L5">index.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,6 +184,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/dummystorage.html" class="tsd-kind-icon">Dummy<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/observabledummystorage.html" class="tsd-kind-icon">Observable<wbr>Dummy<wbr>Storage</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/observablelocalstorage.html" class="tsd-kind-icon">Observable<wbr>Local<wbr>Storage</a>
 					</li>
@@ -188,6 +207,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-not-exported">
 						<a href="globals.html#partialstorageevent" class="tsd-kind-icon">Partial<wbr>Storage<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#haswindow" class="tsd-kind-icon">has<wbr>Window</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#observablelocalstorage" class="tsd-kind-icon">observable<wbr>Local<wbr>Storage</a>
