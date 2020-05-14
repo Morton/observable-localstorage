@@ -5,7 +5,7 @@ import {
   Unsubscribable
 } from './rxInterfaces';
 
-type PartialStorageEvent = Pick<
+export type PartialStorageEvent = Pick<
   StorageEvent,
   'key' | 'newValue' | 'oldValue' | 'storageArea'
 >;
